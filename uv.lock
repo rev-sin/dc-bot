@@ -163,6 +163,11 @@ dependencies = [
     { name = "ruff" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "discord-py", specifier = ">=2.6.2" },
@@ -170,6 +175,9 @@ requires-dist = [
     { name = "python-dotenv", extras = ["cli"], specifier = ">=1.1.1" },
     { name = "ruff", specifier = ">=0.12.11" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = ">=0.12.11" }]
 
 [[package]]
 name = "discord-py"
